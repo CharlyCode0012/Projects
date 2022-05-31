@@ -1,0 +1,89 @@
+[PROJECT]
+Target=Practica2.hex
+Processor_Text=PIC16F877
+CCSVersion=5.025
+Compiler=PCM
+[Target Data]
+FileList=Practica2.c
+[Practica2.c]
+Type=4
+[mru-list]
+1=Practica2.c
+
+[Opened Files]
+1=..\..\P3\programa\P3_LCD.c
+2=
+3=
+4=..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h
+5=..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+6=..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+7=..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+8=
+
+[ProjectLog]
+Days=5
+D1=01-03-2021
+D1_L=20
+D1_L1=[20564]Stopped Editing.
+D1_L2=[20589]Started Editing.
+D1_L3=[21285]Stopped Editing.
+D1_L4=[22352]Started Editing.
+D1_L5=[23056]Stopped Editing.
+TotalEdit=129
+TotalDebug=0
+D1_E=81
+D1_D=0
+D1_L6=[23056]Project Closed.
+D1_L7=[71714]Project Opened.
+D1_L8=[72177]Started Editing.
+D1_L9=[72484]Stopped Editing.
+D1_L10=[72715]Started Editing.
+D1_L11=[73276]Stopped Editing.
+D1_L12=[74403]Started Editing.
+D1_L13=[74996]Stopped Editing.
+D1_L14=[75037]Started Editing.
+D1_L15=[75337]Stopped Editing.
+D1_L16=[75421]Started Editing.
+D1_L17=[76686]Stopped Editing.
+D1_L18=[76697]Started Editing.
+D1_L19=[76890]Stopped Editing.
+D1_L20=[76890]Project Closed.
+D2=02-03-2021
+D2_L=16
+D2_L1=[75986]Project Opened.
+D2_L2=[76015]Started Editing.
+D2_L3=[76760]Stopped Editing.
+D2_L4=[77083]Started Editing.
+D2_L5=[77510]Stopped Editing.
+D2_L6=[78820]Started Editing.
+D2_L7=[79850]Stopped Editing.
+D2_L8=[80176]Started Editing.
+D2_L9=[80732]Stopped Editing.
+D2_L10=[80977]Started Editing.
+D2_L11=[81502]Stopped Editing.
+D2_L12=[81684]Started Editing.
+D2_L13=[82242]Stopped Editing.
+D2_L14=[82340]Started Editing.
+D2_L15=[83116]Stopped Editing.
+D2_E=42
+D2_D=0
+D2_L16=[84649]Project Closed.
+D3=03-03-2021
+D3_L=6
+D3_L1=[1481]Project Opened.
+D3_L2=[1492]Project Closed.
+D3_L3=[40480]Project Opened.
+D3_L4=[41800]Started Editing.
+D3_L5=[42131]Stopped Editing.
+D3_E=6
+D3_D=0
+D3_L6=[42131]Project Closed.
+D4=06-04-2021
+D4_L=1
+D4_L1=[78771]Project Opened.
+D5=07-04-2021
+D5_L=1
+D5_L1=[2703]Project Closed.
+[Units]
+Count=1
+1=Practica2 (main)

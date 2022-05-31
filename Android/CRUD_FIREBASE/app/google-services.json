@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "271560148047",
+    "firebase_url": "https://crusomovil-default-rtdb.firebaseio.com",
+    "project_id": "crusomovil",
+    "storage_bucket": "crusomovil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271560148047:android:b6100ecc8e4eb2dc7c563a",
+        "android_client_info": {
+          "package_name": "com.example.crud_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271560148047-pjn4qq0vpnij1qbqn8k4dsnspcedes1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFUS4S62YwRhogvDtJoYGRD1yG5_jS0cA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271560148047-pjn4qq0vpnij1qbqn8k4dsnspcedes1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

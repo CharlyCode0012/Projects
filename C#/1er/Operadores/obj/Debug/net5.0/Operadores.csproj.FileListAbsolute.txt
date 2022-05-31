@@ -1,0 +1,16 @@
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\bin\Debug\net5.0\Operadores.exe
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\bin\Debug\net5.0\Operadores.deps.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\bin\Debug\net5.0\Operadores.runtimeconfig.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\bin\Debug\net5.0\Operadores.runtimeconfig.dev.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\bin\Debug\net5.0\Operadores.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\bin\Debug\net5.0\ref\Operadores.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\bin\Debug\net5.0\Operadores.pdb
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\obj\Debug\net5.0\Operadores.csproj.AssemblyReference.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\obj\Debug\net5.0\Operadores.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\obj\Debug\net5.0\Operadores.AssemblyInfoInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\obj\Debug\net5.0\Operadores.AssemblyInfo.cs
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\obj\Debug\net5.0\Operadores.csproj.CoreCompileInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\obj\Debug\net5.0\Operadores.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\obj\Debug\net5.0\ref\Operadores.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\obj\Debug\net5.0\Operadores.pdb
+D:\Ceti\7mo\Porgramacion avanzada\1er\Operadores\obj\Debug\net5.0\Operadores.genruntimeconfig.cache

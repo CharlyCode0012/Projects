@@ -1,0 +1,59 @@
+#include <16F877.h>
+#fuses XT, NOWDT, PUT
+#use delay (clock=4M)
+#define use_portb_kbd true
+#byte TRISA=0x85
+#byte PORTA=0x05
+#byte TRISB=0x86
+#byte PORTB=0x06
+#byte TRISC=0x87
+#byte PORTC=0x07
+#define button PIN_A0
+
+#use fast_io(A)
+#use fast_io(B)
+#use fast_io(C)
+
+#include <kbd.c>
+#include <stdio.h>
+
+void main()
+{
+char Key, Pass1[] ={"00000"}, Pass[]={'0','2','2','5','5'};
+int cont=1;
+   kbd_init();             //inicializacion del teclado
+   port_b_pullups(true);   //porteccion para el teclado Hex
+   TRISA = TRISB = 0xFF;
+   TRISC = 0;
+   PORTB = PORTA  = 0;
+   while(!input(button))//ciclo para indicar al usuario el inciio del programa
+   { 
+     delay_ms(500);
+     PORTC=0xFF;
+     delay_ms(500);
+     PORTC=0x00;
+   }
+     delay_ms(500);
+   do
+   {
+      Key=kbd_getc();
+      if((Key!=0)&&(Key!='#')&&(Key!='*'))
+      {
+         Pass1[cont]=Key;
+         cont++;
+      }
+      if(Key=='#')
+      {
+         break;      
+      }
+   }while(true);
+   
+   if(strcmp(Pass, Pass1)==0)
+   {
+     bit_set(PORTC, 7);
+   }
+   else
+   {
+      bit_set(PORTC,0);
+   }
+}

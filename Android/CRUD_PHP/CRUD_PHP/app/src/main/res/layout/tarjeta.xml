@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/tarjetaFoto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/dante"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#3f51b5"
+            app:civ_shadow_radius="15dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tarjetaNombre"
+                android:layout_width="match_parent"
+                android:layout_height="75dp" />
+
+            <TextView
+                android:id="@+id/tarjetaEdad"
+                android:layout_width="match_parent"
+                android:layout_height="75dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

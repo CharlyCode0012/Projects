@@ -1,0 +1,157 @@
+#include <16F877.h>
+#fuses NOWDT, XT
+#use delay (clock=4M)
+#byte TRISA=0x85
+#byte PORTA=0x05
+#byte TRISB=0x86
+#byte PORTB=0x06
+#byte TRISC=0x87
+#byte PORTC=0x07
+#byte TRISD=0x88
+#byte PORTD=0x08
+
+#define button PIN_A0
+
+#use fast_io(A)
+#use fast_io(B)
+#use fast_io(C)
+#use fast_io(D)
+
+
+unsigned int In[3];
+void ctrlRetra()
+{ 
+  while(!input(button)){}
+  delay_ms(500);
+}
+
+void InPut(unsigned int Num)
+{
+   for(unsigned int cont = 0; cont < Num-1; cont++)
+   {
+     while(!input(button))
+     {
+      In[cont] = PORTC = PORTB;
+     }
+     delay_ms(500);
+   }
+}
+
+void Show1(unsigned int Value)
+{
+    PORTC=Value;
+    delay_ms(1000);
+}
+
+void menu(unsigned int OPC)
+{
+    switch(Opc)
+  {
+    case 0:
+         ctrlRetra();
+         byte X=0x05;
+         for(unsigned int cont   =  0;   cont  <   15;   cont++)
+         {
+            rotate_right(&X,1);
+            Show1(X);
+         }
+         break;
+    case 1:
+         unsigned int Promedio=0;
+         InPut(3);
+         
+         for(unsigned int cont1 = 0; cont1 < 2; cont1++)
+             Promedio+=In[cont1];
+           
+         Promedio/=3;
+         Show1(Promedio);
+         break;
+    case 2:
+         InPut(3);
+         if(In[0] >= In[1] && In[0] >= In[2])
+           Show1(In[0]);
+         else
+             if(In[1] >= In[2])
+                Show1(In[1]);
+             else
+                Show1(In[2]);
+         break;
+    case 3:
+         byte Y=0;
+         while( Y < 0x90 )
+         {
+            PORTC=Y;
+            delay_ms(1000);
+            Y+=0x02;
+         }
+         break;
+    case 4:
+         InPut(2);
+         if(In[0]==In[1])
+         {
+            Show1(In[0]);
+            break;
+         }
+         
+         if(In[0] > In[1])
+         {
+            while(In[0] >= In[1])
+            {
+               Show1(In[0]);
+               In[0]--;
+            }
+         }
+         else
+         {
+            while(In[0] <= In[1])
+            {
+               Show1(In[0]);
+               In[0]++;
+            }
+         }
+         break;
+    case 5:
+         int result = 0;
+         InPut(2);
+         int Va1= In[0] & 0x00001111;
+         int Va2= In[1] & 0x00001111;
+         result = (Va1 * Va1)-(Va2*2);
+         int8 value= read_eeprom(0X000003);
+         
+         if(bit_test(value,1))
+              bit_set(PORTD,0);
+         Show1(result);
+           
+         break;
+    default:
+         Show1(0xFF);
+         break;
+  }
+}
+
+
+void main()
+{
+unsigned int Opc=0;
+  TRISA = TRISB = 0xFF;
+  TRISC = TRISD = 0;
+  PORTB = PORTA = PORTD = 0;
+  while(!input(button))
+   { 
+     PORTC=0xFF;
+     delay_ms(500);
+     PORTC=0x00;
+     delay_ms(500);
+   }
+     delay_ms(1000);
+   while(!input(button))
+   { 
+     PORTC = PORTB; 
+     Opc = PORTC;
+   }
+   delay_ms(1000);
+   
+   menu(Opc);
+}
+
+

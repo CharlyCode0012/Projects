@@ -1,0 +1,33 @@
+[PROJECT]
+Target=P3_LCD.hex
+Processor_Text=PIC16F877
+CCSVersion=5.025
+Compiler=PCM
+[Target Data]
+FileList=P3_LCD.c
+[P3_LCD.c]
+Type=4
+[mru-list]
+1=P3_LCD.c
+
+[Opened Files]
+1=P3_LCD.c
+2=
+
+[ProjectLog]
+Days=1
+D1=03-03-2021
+D1_L=6
+D1_L1=[1855]Stopped Editing.
+TotalEdit=6
+TotalDebug=0
+D1_E=6
+D1_D=0
+D1_L2=[1855]Project Closed.
+D1_L3=[42138]Project Opened.
+D1_L4=[42329]Project Closed.
+D1_L5=[42925]Project Opened.
+D1_L6=[42929]Project Closed.
+[Units]
+Count=1
+1=P3_LCD (main)

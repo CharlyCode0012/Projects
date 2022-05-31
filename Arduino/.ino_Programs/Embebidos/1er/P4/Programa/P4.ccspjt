@@ -1,0 +1,52 @@
+[PROJECT]
+Target=P4.hex
+Processor_Text=PIC16F877
+CCSVersion=5.025
+Compiler=PCM
+[Target Data]
+FileList=P4.c
+[P4.c]
+Type=4
+[mru-list]
+1=P4.c
+
+[Opened Files]
+1=..\..\P5\Programa\P5.c
+2=..\..\P1\Programa1\programa1.c
+3=
+
+[ProjectLog]
+Days=2
+D1=06-03-2021
+D1_L=20
+D1_L1=[53386]Stopped Editing.
+D1_L2=[54518]Started Editing.
+D1_L3=[55220]Stopped Editing.
+TotalEdit=106
+TotalDebug=0
+D1_E=106
+D1_D=0
+D1_L4=[55220]Project Closed.
+D1_L5=[55238]Project Opened.
+D1_L6=[55285]Started Editing.
+D1_L7=[56369]Stopped Editing.
+D1_L8=[56454]Started Editing.
+D1_L9=[57762]Stopped Editing.
+D1_L10=[62581]Started Editing.
+D1_L11=[62897]Stopped Editing.
+D1_L12=[74537]Started Editing.
+D1_L13=[75100]Stopped Editing.
+D1_L14=[81909]Started Editing.
+D1_L15=[82209]Stopped Editing.
+D1_L16=[82273]Started Editing.
+D1_L17=[83354]Stopped Editing.
+D1_L18=[83415]Started Editing.
+D1_L19=[83679]Stopped Editing.
+D1_L20=[83679]Project Closed.
+D2=07-04-2021
+D2_L=2
+D2_L1=[3272]Project Opened.
+D2_L2=[6488]Project Closed.
+[Units]
+Count=1
+1=P4 (main)

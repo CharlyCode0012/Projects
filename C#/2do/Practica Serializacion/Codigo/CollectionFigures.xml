@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ArrayOfFiguras1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Figuras1 xsi:type="Circulo" ID="C1" Radio="12" />
+  <Figuras1 xsi:type="Circulo" ID="C2" Radio="6" />
+  <Figuras1 xsi:type="Circulo" ID="C3" Radio="3" />
+  <Figuras1 xsi:type="Rectangulo" ID="R1" Base="18" Altura="5" />
+  <Figuras1 xsi:type="Rectangulo" ID="R2" Base="9" Altura="6" />
+  <Figuras1 xsi:type="Triangulo" ID="T1" Lados="12 12 12" Tipo_x0020_de_x0020_triangulo="Es un triangulo Equilatero y tambien es Acutangulo" />
+  <Figuras1 xsi:type="Triangulo" ID="T2" Lados="13 13 20" Tipo_x0020_de_x0020_triangulo="Es un triangulo Escaleno y tambien es Obstusangulo" />
+  <Figuras1 xsi:type="Triangulo" ID="T3" Lados="13 15 20" Tipo_x0020_de_x0020_triangulo="Es un triangulo Escaleno y tambien es Obstusangulo" />
+</ArrayOfFiguras1>

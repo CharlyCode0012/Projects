@@ -1,0 +1,88 @@
+
+ROM used:   2855/8192 (35%)
+            3140/8192 (38%) including unused fragments
+
+            1.5 Average locations per line
+            11.6 Average locations per statement
+
+RAM used:   13/368 (4%) at main() level
+            83/368 (23%) worst case
+
+Stack used: 7 worst case (7 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  186   119  48  P4.c
+  640     0   0  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877.h
+  135    43  17  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\kbd4x4.c
+  456    84  34  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c
+   37     0   0  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h
+  423     0   0  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+   32     0   0  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+   28     0   0  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+----- -----
+ 1937   246 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     21   1    1             @delay_ms1
+0     20   1    0             @const619
+0      3   0    0      3  0.0  kbd_init
+0    103   4    3   5865 10.1  kbd_getc
+0      8   0    0             @goto10560
+ Inline         3    596  5.9  lcd_read_byte
+0      6   0    0     59  4.2  lcd_read_nibble
+0     12   0    1    179  3.3  lcd_send_nibble
+0     64   2    3    460  4.7  lcd_send_byte
+0     62   2    6    814  7.2  lcd_init
+0     18   1    4    208  6.3  lcd_gotoxy
+0     44   2    1    354  4.7  lcd_putc
+0     33   1    7    169  2.3  show1
+0      1   0    0             @const771
+0     86   3    4             @PSTRINGC7_658
+0    117   4   13             @MULFF
+ Inline         5             @FTOSD
+0     79   3   13             @DIV3232
+0    224   8   13             @PRINTF_L32D_658FPFPF
+0    196   7   11    761  8.9  ingresar
+ Inline         2             @PSTRINGR_658
+ Inline         2             @ITOF
+0    321  11   16             @ADDFF
+0      1   0    0             @const797
+1   1092  38   21   2865 13.2  menu
+ Inline        14             @DIVFF
+0     63   2   10             @FLT
+0     21   1    3             @DIV88
+0     87   3    6             @PRINTF_D_658
+0    140   5    2    814  3.8  MAIN
+0      3   0    0             @const831
+0      8   0    0             @const832
+0      8   0    0             @const833
+0      8   0    0             @const834
+0      1   0    0             @const835
+0      1   0    0             @const836
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               13
+    Statements              246
+    Comments                356
+    Volume (V)              18539
+    Difficulty (D)          71.7
+    Effort to implement (E) 1329840
+    Time to implement (T)   20 hours, 31 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   38
+    Maintainability (MI)    133
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  1759  285  
+00800-00FFF  1092  956  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

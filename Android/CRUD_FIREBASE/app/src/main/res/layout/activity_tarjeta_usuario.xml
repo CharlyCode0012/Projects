@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".TarjetaUsuario">
+
+    <ImageView
+        android:id="@+id/activitytarjetadeusuarioFoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        />
+
+    <EditText
+        android:id="@+id/activityTarjetaDeUsuarioNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/genero"
+        />
+
+    <EditText
+        android:id="@+id/activityTarjetaDeUsuarioGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/altura"
+        />
+
+    <EditText
+        android:id="@+id/activityTarjetaDeUsuarioAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edad"
+        />
+
+    <EditText
+        android:id="@+id/activityTarjetaDeUsuarioEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/videojuego"
+        />
+
+    <EditText
+        android:id="@+id/activityTarjetaDeUsuarioVideoJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/activitytarjetadeusuarioModificar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/modificar"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/DarkCyan"
+            />
+        <Button
+            android:id="@+id/activitytarjetadeusuarioEliminar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/eliminar"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/DarkRed"
+            />
+    </LinearLayout>
+
+</LinearLayout>

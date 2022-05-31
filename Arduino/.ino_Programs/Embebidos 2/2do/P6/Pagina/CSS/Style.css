@@ -1,0 +1,73 @@
+
+.range1{
+    display: inline;
+    width: 31%;
+    margin: 17px;
+}
+.show1{
+    width: 31%;
+    margin: 17px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rgb1{
+height: 30px;
+width: 40%;
+display:block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+background-color: #f1f1f1;
+border-radius: 50px;
+-webkit-appearance: none;
+}
+
+#rgb1::-moz-range-thumb {
+width: 25px;
+height: 25px;
+background-color: #ff0000;
+border-radius: 50%;
+border: 0;
+}
+
+input[type=submit]{
+    width: 40%;
+    display: block;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 30px;
+}
+
+input[type=submit]:hover,
+input[type=button]:hover{
+    cursor:pointer;
+   
+}
+
+#rgb2{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 30px;
+}
+
+#colorBox1{
+    border-style: solid;
+    border-radius: 3px;
+    background-color: rgb(128, 128, 128);
+    border: 10px, black;
+    width: 200px;
+	height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hexColor{
+    display: none;
+}

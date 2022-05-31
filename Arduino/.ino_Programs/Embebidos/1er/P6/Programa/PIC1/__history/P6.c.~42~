@@ -1,0 +1,38 @@
+#include <16F877.h>
+#fuses NOWDT, HS, NOLVP
+#device ADC=10
+#use delay (clock=4M)
+
+#byte TRISA=0x85
+#byte PORTA=0x05
+#byte TRISC=0x87
+#byte PORTC=0x07
+#byte TRISD=0x88
+#byte PORTD=0x08
+
+#use RS232(BAUD = 62500, XMIT = PIN_C6, RCV = PIN_C7)   //baudios 62500 bits por seg, Tx= c6    Rx = C7
+#include <lcd.c>
+//#use fast_io(A)
+//#use fast_io(C)
+//#use fast_io(D)
+
+void main()
+{
+   setup_adc(ADC_CLOCK_INTERNAL);                 // ADC Module uses its internal oscillator
+   setup_adc_ports(AN0);                          // Configure AN0 pin as analog
+   set_adc_channel(0); //Seleccionar Canal 0 para sensor de Temperatura    
+   lcd_init();
+   int16 valord = 0;
+   float temper;
+
+   delay_ms(1);
+   while(true)
+   {
+      valord = read_adc();
+      delay_ms(1);
+      temper =   read_adc() * 0.489;
+      putc(temper);  //se envia por C6 el valor de la temp hacia el otro pic
+      printf(lcd_putc, "%f", temper);
+      delay_ms(100);
+   }
+}

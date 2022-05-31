@@ -1,0 +1,200 @@
+#include <16F877.h>
+#include <kbd4x4.c>
+#include <lcd.c>
+#include <stdio.h>
+
+#fuses NOWDT, XT
+#use delay (clock=4M)
+#byte TRISA=0x85
+#byte PORTA=0x05
+#byte TRISB=0x86
+#byte PORTB=0x06
+
+
+
+#define button PIN_A0
+#define use_portb_kbd true
+
+#use fast_io(A)
+#use fast_io(B)
+
+
+void show1(float Value)
+{
+    printf(lcd_putc, "%f", value);
+    delay_ms(5000);
+    lcd_putc("\f");
+}
+
+char enter()
+{
+   char c='\0';
+   c=kbd_getc();
+   while(c=='\0')
+   { 
+     delay_us(10);
+     c = kbd_getc();
+   }
+   return c;
+}
+
+void ingresar(char** matriz1, unsigned int Num1=3)
+{
+   for(unsigned int cont=0; cont<Num1;cont++)
+   {
+      for(unsigned int cont1=0; cont1<17;cont1++)
+      {
+         matriz1[cont1][cont] = kbd_getc();
+         printf(lcd_putc, matriz1[cont1][cont]);
+         While( matriz1[cont1][cont] =='\0' || matriz1[cont1][cont]>=58 || matriz1[cont1][cont] <= 47)
+         {
+            lcd_putc("\f");
+            matriz1[cont1][cont] = kbd_getc();
+            printf(lcd_putc, matriz1[cont1][cont]);
+            if(matriz1[cont1][cont] == '#' )
+            {
+               matriz1[cont1][cont] = '\0';
+               break;
+            }
+            
+         }
+         if(matriz1[cont1][cont] == '\0'){
+              break;
+         }
+         
+   }
+}
+
+float conve(char** matriz2, unsigned  int fila)
+{
+   float valor = 0;
+ 
+   return valor = atoi(matriz2[][fila]);
+}
+
+void menu(char OPC)
+{
+   float promedio = 0, X1=0, Y1=0, Z1=0;
+   float arreglo[3];
+   char M1[17][3];
+   char **P;
+   p = new char*[17]
+   for(unsigned int contador = 0; contador < 17; contador++)
+      p[contador]= new char[3];
+   p=M1;
+   
+    switch(OPC)
+  {
+    case '0':
+         byte X2=0x05;
+         show1(X2);
+         for(unsigned int cont   =  0;   cont  <=   15;   cont++)
+         {
+            rotate_right(&X2,1);
+            show1(X2);//funcion para mostrar valor en PuertoC
+         }
+         break;
+    case '1':
+         ingresar(p);
+         for(unsigned int cont_ = 0; cont_ < 3; cont_++)
+         {
+            arreglo[cont_] = convertir(p,cont_);
+         }
+         promedio = (arreglo[0] + arreglo[1] + arreglo[3])/3;
+         show1(promedio);
+         break;
+    case '2':
+         enter(X1);
+         enter(Y1);
+         enter(Z1);
+         show1(0);
+         if(X1  >= Y1  && X1  >= Z1 )
+           Show1(X1);
+         else
+             if(Y1  >= Z1)
+                show1(Y1);
+             else
+                show1(Z1);
+         break;
+    case '3':
+         byte Y2=0;//creacion de un byte para una secuencia más sencilla
+         while( Y2 <= 0x90 )
+         {
+            PORTC=Y2;
+            delay_ms(300);
+            Y2+=0x02;//se incrementa en 2 para solo mostrar pares
+         }
+         break;
+    case '4':
+         enter(X1);
+         enter(Y1);
+         if(X1 == Y1)//son iguales innecesario seguir
+         {
+            show1(X1);
+            break;
+         }
+         if(X1 > Y1)//se analiza cual es mayor para asi saber que secuencia tendra
+         {
+            while(X1 >= Y1)
+            {
+               show1(X1);//ya que x es mayor se requiere decrementar
+               X1--;
+            }
+         }
+         else
+         {
+            while(X1 <= Y1)//como x es menor se recquiere incrementar
+            {
+               show1(X1);
+               X1++;
+            }
+         }
+         break;
+    case '5':
+         enter(X1);
+         enter(Y1);
+         
+         int result = 0;
+         int Va1= X1; //& 0x00011111;//mascara de 4 bits
+         int Va2= Y1;//& 0x00011111;
+         result = (Va1 * Va1)-(Va2*2);
+        
+         if( (Va1 * Va1)< (Va2*2))
+         {
+                  result = (Va2*2)-(Va1 * Va1);
+                  bit_set(PORTD, 0);//signo negativo
+         }
+         show1(result);
+         break;
+    default:
+         show1(0xFF);//FF si no corresponde a algun caso anterior
+         break;
+  }
+}
+
+
+void main()
+{
+   char Opc = '0';
+   set_tris_d(0); 
+   lcd_init();
+   kbd_init();             //inicializacion del teclado
+   port_b_pullups(true);   //porteccion para el teclado Hex
+  
+   TRISA = TRISB = 0xFF;
+   PORTB = PORTA  = 0;
+   lcd_gotoxy(8,1)
+   printf(lcd_putc, "Menu");
+   lcd_gotoxy(1,2);
+   while(!input(button))
+   { 
+      printf(lcd_putc, "0.Rota  1.Prome");
+      delay_ms(1000);
+      printf(lcd_putc, "2.NuMa  3.Pares");
+      delay_ms(1000);
+      printf(lcd_putc, "4.X a Y  5.Ec");
+      delay_ms(1000);
+   }
+   enter(Opc); //se ingresa opcion de menu
+   menu(Opc);//llama a la funcion menu.
+}

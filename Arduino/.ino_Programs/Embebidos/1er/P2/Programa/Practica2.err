@@ -1,0 +1,4 @@
+>>> Warning 225 "C:\Program Files (x86)\PICC\Drivers\kbd4x4.c" Line 26(22,27): Duplicate #define
+      Memory usage:   ROM=4%      RAM=7% - 8%
+      0 Errors,  1 Warnings.
+Build Successful.

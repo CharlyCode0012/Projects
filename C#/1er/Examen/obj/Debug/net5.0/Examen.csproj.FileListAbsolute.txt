@@ -1,0 +1,16 @@
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\bin\Debug\net5.0\Examen.exe
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\bin\Debug\net5.0\Examen.deps.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\bin\Debug\net5.0\Examen.runtimeconfig.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\bin\Debug\net5.0\Examen.runtimeconfig.dev.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\bin\Debug\net5.0\Examen.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\bin\Debug\net5.0\ref\Examen.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\bin\Debug\net5.0\Examen.pdb
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\obj\Debug\net5.0\Examen.csproj.AssemblyReference.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\obj\Debug\net5.0\Examen.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\obj\Debug\net5.0\Examen.AssemblyInfoInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\obj\Debug\net5.0\Examen.AssemblyInfo.cs
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\obj\Debug\net5.0\Examen.csproj.CoreCompileInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\obj\Debug\net5.0\Examen.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\obj\Debug\net5.0\ref\Examen.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\obj\Debug\net5.0\Examen.pdb
+D:\Ceti\7mo\Porgramacion avanzada\1er\Examen\obj\Debug\net5.0\Examen.genruntimeconfig.cache

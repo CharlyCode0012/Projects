@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>RGB</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+	<link rel="stylesheet" href="CSS/Range.css">
+</head>
+<body>
+	<form method="post" action="update_values.php" >
+		<fieldset class="range1">
+			<legend>RED</legend>
+				<div class="inputDiv">
+					<div class="etiqueta"></div>
+					<input id="redInput" type="range" min="0" max="255" oninput="Color()" />
+				</div>
+		</fieldset>
+		
+		<fieldset class="range1">
+			<legend>Green</legend>
+				<div class="inputDiv">
+					<div class="etiquetaG"></div>
+					<input id="greenInput" type="range" min="0" max="255" oninput="Color()" />
+				</div>
+		</fieldset>
+		
+		<fieldset class="range1">
+			<legend>Blue</legend>
+				<div class="inputDiv">
+					<div class="etiquetaB"></div>
+					<input class="range" id="blueInput" type="range" min="0" max="255" oninput="Color()" />
+				</div>
+			  <script src="JS/Range.JS"></script>
+		</fieldset>
+		
+		<br>
+		<fieldset class="show1">
+		    <div>
+				<br>
+		    	<label id="rgb2">RGB:</label> 
+				<input type="text" name="rgb1" id="rgb1"  value ="128,128,128" readonly = ""></input>
+		        <br>
+		    </div>
+		    
+		    <input type="submit"></input>
+		    <br><br>
+
+		    <div id="colorBox1">
+		    </div>
+		<br><br>
+		</fieldset>
+	
+		<script src="JS/Color.JS"></script>
+	</form>
+</body>
+</html>

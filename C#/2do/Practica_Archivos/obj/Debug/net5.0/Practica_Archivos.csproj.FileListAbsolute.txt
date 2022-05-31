@@ -1,0 +1,16 @@
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\bin\Debug\net5.0\Practica_Archivos.exe
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\bin\Debug\net5.0\Practica_Archivos.deps.json
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\bin\Debug\net5.0\Practica_Archivos.runtimeconfig.json
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\bin\Debug\net5.0\Practica_Archivos.runtimeconfig.dev.json
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\bin\Debug\net5.0\Practica_Archivos.dll
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\bin\Debug\net5.0\ref\Practica_Archivos.dll
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\bin\Debug\net5.0\Practica_Archivos.pdb
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\obj\Debug\net5.0\Practica_Archivos.csproj.AssemblyReference.cache
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\obj\Debug\net5.0\Practica_Archivos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\obj\Debug\net5.0\Practica_Archivos.AssemblyInfoInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\obj\Debug\net5.0\Practica_Archivos.AssemblyInfo.cs
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\obj\Debug\net5.0\Practica_Archivos.csproj.CoreCompileInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\obj\Debug\net5.0\Practica_Archivos.dll
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\obj\Debug\net5.0\ref\Practica_Archivos.dll
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\obj\Debug\net5.0\Practica_Archivos.pdb
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica_Archivos\obj\Debug\net5.0\Practica_Archivos.genruntimeconfig.cache

@@ -1,0 +1,10 @@
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica Serializacion\Library9\bin\Debug\netstandard2.0\Library9.deps.json
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica Serializacion\Library9\bin\Debug\netstandard2.0\Library9.dll
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica Serializacion\Library9\bin\Debug\netstandard2.0\Library9.pdb
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica Serializacion\Library9\obj\Debug\netstandard2.0\Library9.csproj.AssemblyReference.cache
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica Serializacion\Library9\obj\Debug\netstandard2.0\Library9.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica Serializacion\Library9\obj\Debug\netstandard2.0\Library9.AssemblyInfoInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica Serializacion\Library9\obj\Debug\netstandard2.0\Library9.AssemblyInfo.cs
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica Serializacion\Library9\obj\Debug\netstandard2.0\Library9.csproj.CoreCompileInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica Serializacion\Library9\obj\Debug\netstandard2.0\Library9.dll
+D:\Ceti\7mo\Porgramacion avanzada\2do\Practica Serializacion\Library9\obj\Debug\netstandard2.0\Library9.pdb

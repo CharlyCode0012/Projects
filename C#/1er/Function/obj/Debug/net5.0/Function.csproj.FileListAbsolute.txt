@@ -1,0 +1,16 @@
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\bin\Debug\net5.0\Function.exe
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\bin\Debug\net5.0\Function.deps.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\bin\Debug\net5.0\Function.runtimeconfig.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\bin\Debug\net5.0\Function.runtimeconfig.dev.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\bin\Debug\net5.0\Function.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\bin\Debug\net5.0\ref\Function.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\bin\Debug\net5.0\Function.pdb
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\obj\Debug\net5.0\Function.csproj.AssemblyReference.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\obj\Debug\net5.0\Function.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\obj\Debug\net5.0\Function.AssemblyInfoInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\obj\Debug\net5.0\Function.AssemblyInfo.cs
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\obj\Debug\net5.0\Function.csproj.CoreCompileInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\obj\Debug\net5.0\Function.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\obj\Debug\net5.0\ref\Function.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\obj\Debug\net5.0\Function.pdb
+D:\Ceti\7mo\Porgramacion avanzada\1er\Function\obj\Debug\net5.0\Function.genruntimeconfig.cache

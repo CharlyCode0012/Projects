@@ -1,0 +1,9 @@
+ÀÄP5
+   ÃÄMAIN  0/57  Ram=1
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄ@const627  0/14  Ram=0
+   ³  ÀÄ@delay_ms1  0/21  Ram=1
+   ÃÄReloj  0/24  Ram=0
+   ÀÄInter_Ext  0/22  Ram=1
+      ÃÄ@const624  0/17  Ram=0
+      ÀÄ@delay_ms1  0/21  Ram=1

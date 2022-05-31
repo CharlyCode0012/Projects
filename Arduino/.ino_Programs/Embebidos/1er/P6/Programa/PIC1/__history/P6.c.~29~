@@ -1,0 +1,34 @@
+#include <16F877.h>
+#fuses NOWDT, XT
+#use delay (clock=4M)
+
+#byte TRISA=0x85
+#byte PORTA=0x05
+#byte TRISC=0x87
+#byte PORTC=0x07
+
+#use RS232(BAUD = 62500, XMIT = PIN_C6, RCV = PIN_C7)   //baudios 62500 bits por seg, Tx= c6    Rx = C7
+
+#use fast_io(A)
+#use fast_io(C)
+
+
+void main()
+{
+   TRISA = 0xFF;
+   TRISC = 0x80;
+   
+   int valord = 0;
+   float temper;
+   setup_adc_ports (AN0); // seleccionamos AN0 con entrada analogica
+   setup_adc (ADC_CLOCK_INTERNAL);  
+   set_adc_channel (0);//Seleccionar Canal 0 para sensor de Temperatura    
+   delay_ms(1);
+   while(true)
+   {
+      valord = read_adc();
+      delay_ms(1);
+      temper =  (0.489 * valord) - 273;
+      putc(temper);  //se envia por C6 el valor de la temp hacia el otro pic
+   }
+}

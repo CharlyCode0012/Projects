@@ -1,0 +1,38 @@
+#include <16F877.h>
+#fuses NOWDT, XT
+#use delay (clock=4M)
+
+#byte TRISC = 0x87
+#byte PORTC = 0x07
+#byte PORTD = 0x08
+#byte TRISD = 0x88
+
+#include <lcd.c>
+#include <string.h>
+#use RS232(BAUD = 62500, XMIT = PIN_C6, RCV = PIN_C7)   //baudios 62500 bits por seg, Tx= c6    Rx = C7
+
+#use fast_io(D)
+#use fast_io(C)
+
+int Celsius = 0;
+
+#INT_RDA
+void rutinaSerial()
+{
+   Celsius = getc();
+}
+
+void main()
+{
+   lcd_init();
+   enable_interrupts(INT_RDA); //se activa la interrupcion por recibo de datos den el puerto Rx
+   enable_interrupts(GLOBAL);
+   while(true)
+   {
+      lcd_gotoxy(2, 1);
+      printf(lcd_putc, ":Temperatura:");
+      lcd_gotoxy(6, 2);
+      printf(lcd_putc, "%1d C", Celsius);
+      delay_ms(100);
+   }
+}

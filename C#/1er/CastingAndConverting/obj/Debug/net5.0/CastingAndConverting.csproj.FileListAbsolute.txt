@@ -1,0 +1,16 @@
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\bin\Debug\net5.0\CastingAndConverting.exe
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\bin\Debug\net5.0\CastingAndConverting.deps.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\bin\Debug\net5.0\CastingAndConverting.runtimeconfig.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\bin\Debug\net5.0\CastingAndConverting.runtimeconfig.dev.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\bin\Debug\net5.0\CastingAndConverting.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\bin\Debug\net5.0\ref\CastingAndConverting.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\bin\Debug\net5.0\CastingAndConverting.pdb
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\obj\Debug\net5.0\CastingAndConverting.csproj.AssemblyReference.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\obj\Debug\net5.0\CastingAndConverting.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\obj\Debug\net5.0\CastingAndConverting.AssemblyInfoInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\obj\Debug\net5.0\CastingAndConverting.AssemblyInfo.cs
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\obj\Debug\net5.0\CastingAndConverting.csproj.CoreCompileInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\obj\Debug\net5.0\CastingAndConverting.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\obj\Debug\net5.0\ref\CastingAndConverting.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\obj\Debug\net5.0\CastingAndConverting.pdb
+D:\Ceti\7mo\Porgramacion avanzada\1er\CastingAndConverting\obj\Debug\net5.0\CastingAndConverting.genruntimeconfig.cache

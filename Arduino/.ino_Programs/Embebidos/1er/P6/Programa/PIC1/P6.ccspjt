@@ -1,0 +1,80 @@
+[PROJECT]
+Target=P6.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.025
+Compiler=PCM
+[Target Data]
+FileList=P6.c
+[P6.c]
+Type=4
+[mru-list]
+1=P6.c
+
+[ProjectLog]
+Days=3
+D1=08-03-2021
+D1_L=10
+D1_L1=[83026]Stopped Editing.
+D1_L2=[83547]Started Editing.
+D1_L3=[84252]Stopped Editing.
+TotalEdit=110
+TotalDebug=0
+D1_E=41
+D1_D=0
+D1_L4=[84252]Project Closed.
+D1_L5=[84305]Project Opened.
+D1_L6=[84319]Project Closed.
+D1_L7=[85200]Project Opened.
+D1_L8=[85219]Started Editing.
+D1_L9=[86270]Stopped Editing.
+D1_L10=[86270]Project Closed.
+D2=09-03-2021
+D2_L=34
+D2_L1=[56]Project Opened.
+D2_L2=[65]Started Editing.
+D2_L3=[554]Stopped Editing.
+D2_E=69
+D2_D=0
+D2_L4=[554]Project Closed.
+D2_L5=[630]Project Opened.
+D2_L6=[637]Started Editing.
+D2_L7=[1196]Stopped Editing.
+D2_L8=[2284]Started Editing.
+D2_L9=[2518]Stopped Editing.
+D2_L10=[2518]Project Closed.
+D2_L11=[2608]Project Opened.
+D2_L12=[2700]Started Editing.
+D2_L13=[3284]Stopped Editing.
+D2_L14=[3284]Project Closed.
+D2_L15=[3294]Project Opened.
+D2_L16=[3394]Started Editing.
+D2_L17=[4988]Stopped Editing.
+D2_L18=[4988]Project Closed.
+D2_L19=[5492]Project Opened.
+D2_L20=[5503]Started Editing.
+D2_L21=[6167]Stopped Editing.
+D2_L22=[6167]Project Closed.
+D2_L23=[40420]Project Opened.
+D2_L24=[40544]Started Editing.
+D2_L25=[40589]Stopped Editing.
+D2_L26=[40589]Project Closed.
+D2_L27=[40680]Project Opened.
+D2_L28=[40689]Started Editing.
+D2_L29=[40994]Stopped Editing.
+D2_L30=[41156]Started Editing.
+D2_L31=[41166]Stopped Editing.
+D2_L32=[41166]Project Closed.
+D2_L33=[75018]Project Opened.
+D2_L34=[76918]Project Closed.
+D3=16-03-2021
+D3_L=2
+D3_L1=[43039]Project Opened.
+D3_L2=[43771]Project Closed.
+
+[Opened Files]
+1=P6.c
+2=
+3=
+[Units]
+Count=1
+1=P6 (main)

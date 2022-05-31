@@ -1,0 +1,15 @@
+ÀÄPractica2
+   ÀÄMAIN  0/106  Ram=15
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄkbd_init  0/3  Ram=0
+      ÃÄ@delay_ms1  0/21  Ram=1
+      ÃÄ@delay_ms1  0/21  Ram=1
+      ÃÄ@delay_ms1  0/21  Ram=1
+      ÃÄenter  0/22  Ram=1
+      ³  ÃÄkbd_getc  0/103  Ram=3
+      ³  ³  ÃÄ@goto10560  0/8  Ram=0
+      ³  ³  ÀÄ@const621  0/20  Ram=0
+      ³  ÀÄkbd_getc  0/103  Ram=3
+      ³     ÀÄ*
+      ÃÄ@delay_ms1  0/21  Ram=1
+      ÀÄstrcmp  0/70  Ram=5

@@ -1,0 +1,12 @@
+D:\Ceti\7mo\Porgramacion avanzada\2do\POO1\Library9\bin\Debug\net5.0\Library9.deps.json
+D:\Ceti\7mo\Porgramacion avanzada\2do\POO1\Library9\bin\Debug\net5.0\Library9.dll
+D:\Ceti\7mo\Porgramacion avanzada\2do\POO1\Library9\bin\Debug\net5.0\ref\Library9.dll
+D:\Ceti\7mo\Porgramacion avanzada\2do\POO1\Library9\bin\Debug\net5.0\Library9.pdb
+D:\Ceti\7mo\Porgramacion avanzada\2do\POO1\Library9\obj\Debug\net5.0\Library9.csproj.AssemblyReference.cache
+D:\Ceti\7mo\Porgramacion avanzada\2do\POO1\Library9\obj\Debug\net5.0\Library9.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ceti\7mo\Porgramacion avanzada\2do\POO1\Library9\obj\Debug\net5.0\Library9.AssemblyInfoInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\2do\POO1\Library9\obj\Debug\net5.0\Library9.AssemblyInfo.cs
+D:\Ceti\7mo\Porgramacion avanzada\2do\POO1\Library9\obj\Debug\net5.0\Library9.csproj.CoreCompileInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\2do\POO1\Library9\obj\Debug\net5.0\Library9.dll
+D:\Ceti\7mo\Porgramacion avanzada\2do\POO1\Library9\obj\Debug\net5.0\ref\Library9.dll
+D:\Ceti\7mo\Porgramacion avanzada\2do\POO1\Library9\obj\Debug\net5.0\Library9.pdb

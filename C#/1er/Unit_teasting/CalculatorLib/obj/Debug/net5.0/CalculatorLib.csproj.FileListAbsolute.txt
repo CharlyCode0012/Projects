@@ -1,0 +1,12 @@
+D:\Ceti\7mo\Porgramacion avanzada\1er\Unit_teasting\CalculatorLib\bin\Debug\net5.0\CalculatorLib.deps.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\Unit_teasting\CalculatorLib\bin\Debug\net5.0\CalculatorLib.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Unit_teasting\CalculatorLib\bin\Debug\net5.0\ref\CalculatorLib.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Unit_teasting\CalculatorLib\bin\Debug\net5.0\CalculatorLib.pdb
+D:\Ceti\7mo\Porgramacion avanzada\1er\Unit_teasting\CalculatorLib\obj\Debug\net5.0\CalculatorLib.csproj.AssemblyReference.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Unit_teasting\CalculatorLib\obj\Debug\net5.0\CalculatorLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ceti\7mo\Porgramacion avanzada\1er\Unit_teasting\CalculatorLib\obj\Debug\net5.0\CalculatorLib.AssemblyInfoInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Unit_teasting\CalculatorLib\obj\Debug\net5.0\CalculatorLib.AssemblyInfo.cs
+D:\Ceti\7mo\Porgramacion avanzada\1er\Unit_teasting\CalculatorLib\obj\Debug\net5.0\CalculatorLib.csproj.CoreCompileInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Unit_teasting\CalculatorLib\obj\Debug\net5.0\CalculatorLib.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Unit_teasting\CalculatorLib\obj\Debug\net5.0\ref\CalculatorLib.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Unit_teasting\CalculatorLib\obj\Debug\net5.0\CalculatorLib.pdb

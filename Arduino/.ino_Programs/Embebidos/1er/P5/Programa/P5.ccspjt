@@ -1,0 +1,48 @@
+[PROJECT]
+Target=P5.hex
+Processor_Text=PIC16F877
+CCSVersion=5.025
+Compiler=PCM
+[Target Data]
+FileList=P5.c
+[P5.c]
+Type=4
+[mru-list]
+1=P5.c
+
+[Opened Files]
+1=P5.c
+2=..\..\P1\Programa1\programa1.c
+3=
+
+[ProjectLog]
+Days=2
+D1=06-03-2021
+D1_L=3
+D1_L1=[84303]Stopped Editing.
+D1_L2=[84610]Started Editing.
+D1_L3=[86009]Stopped Editing.
+D2=07-03-2021
+D2_L=15
+D2_L1=[778]Started Editing.
+D2_L2=[1715]Stopped Editing.
+D2_L3=[1806]Started Editing.
+D2_L4=[2328]Stopped Editing.
+D2_L5=[2615]Started Editing.
+D2_L6=[2942]Stopped Editing.
+D2_L7=[4456]Started Editing.
+D2_L8=[4774]Stopped Editing.
+D2_L9=[4972]Started Editing.
+D2_L10=[6210]Stopped Editing.
+TotalEdit=67
+TotalDebug=0
+D2_E=67
+D2_D=0
+D2_L11=[6210]Project Closed.
+D2_L12=[70559]Project Opened.
+D2_L13=[85550]Started Editing.
+D2_L14=[85995]Stopped Editing.
+D2_L15=[85995]Project Closed.
+[Units]
+Count=1
+1=P5 (main)

@@ -1,0 +1,48 @@
+#include <16F877.h>
+#fuses NOWDT, XT
+#use delay (clock=4M)
+
+#byte TRISA=0x85
+#byte PORTA=0x05
+#byte TRISB=0x86
+#byte PORTB=0x06
+#byte TRISC=0x87
+#byte PORTC=0x07
+#byte TRISD=0x88
+#byte PORTD=0x08
+
+#define use_portb_kbd true
+#define button PIN_A0
+#use fast_io(A)
+#use fast_io(B)
+int veces, Seg;
+
+
+#INT_RTCC //Timer0
+Reloj()
+{
+   veces--;
+   Set_RTCC(243);
+   if(veces==0)
+   {
+      
+      Seg+=2;
+      if(Seg == 2)
+         set_bit(PORTD,7);
+      if(Seg == 4)
+      {
+         clear(PORTD,0);
+         Seg = 0;
+      }
+   }
+}
+
+void main()
+{
+   
+   veces=601;
+   SET_RTCC(238);
+   SETUP_TIMER_0(RTCC_INTERNAL|RTCC_DIV_256|RTCC_8_bit);
+   ENABLE_INTERRUPTS(INT_RTCC);                 //Activa interrupcion del timer
+   ENABLE_INTERRUPTS(GLOBAL);            //activa todas las interrupciones
+}

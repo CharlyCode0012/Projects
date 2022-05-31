@@ -1,0 +1,16 @@
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\bin\Debug\net5.0\Debbuging.exe
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\bin\Debug\net5.0\Debbuging.deps.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\bin\Debug\net5.0\Debbuging.runtimeconfig.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\bin\Debug\net5.0\Debbuging.runtimeconfig.dev.json
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\bin\Debug\net5.0\Debbuging.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\bin\Debug\net5.0\ref\Debbuging.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\bin\Debug\net5.0\Debbuging.pdb
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\obj\Debug\net5.0\Debbuging.csproj.AssemblyReference.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\obj\Debug\net5.0\Debbuging.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\obj\Debug\net5.0\Debbuging.AssemblyInfoInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\obj\Debug\net5.0\Debbuging.AssemblyInfo.cs
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\obj\Debug\net5.0\Debbuging.csproj.CoreCompileInputs.cache
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\obj\Debug\net5.0\Debbuging.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\obj\Debug\net5.0\ref\Debbuging.dll
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\obj\Debug\net5.0\Debbuging.pdb
+D:\Ceti\7mo\Porgramacion avanzada\1er\Debbuging\obj\Debug\net5.0\Debbuging.genruntimeconfig.cache

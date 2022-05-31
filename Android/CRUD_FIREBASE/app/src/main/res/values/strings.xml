@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CRUD_FireBase</string>
+    <string name="usuario">Nombre del usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="ingresa">Acceder</string>
+    <string name="Altas">Alta</string>
+    <string name="ver">Mostrar datos</string>
+    <string name="nombre">Nombre</string>
+    <string name="genero">Genero</string>
+    <string name="altura">Altura</string>
+    <string name="edad">Edad</string>
+    <string name="videojuego">Video Juego</string>
+    <string name="guardar">Guardar</string>
+    <string name="modificar">Modificar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="confirmar">¿Seguro que usted quiere eliminar este dato?</string>
+    <string name="afirmativo">Si</string>
+    <string name="cancelar">No</string>
+    <string name="usario">User Name</string>
+    <string name="confirmarPasswrod">Confirmar contraseña</string>
+    <string name="Resgitrar">Registrar</string>
+</resources>

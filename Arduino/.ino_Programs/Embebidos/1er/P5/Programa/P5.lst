@@ -1,0 +1,311 @@
+CCS PCM C Compiler, Version 5.025, 21306               07-mar.-21 01:40
+
+               Filename:   C:\Users\ST\Desktop\Ceti\6to\Embebidos\1er\P5\Programa\P5.lst
+
+               ROM used:   209 words (3%)
+                           Largest free fragment is 2048
+               RAM used:   16 (4%) at main() level
+                           20 (5%) worst case
+               Stack used: 3 locations (1 in main + 2 for interrupts)
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   098
+0003:  NOP
+0004:  MOVWF  7F
+0005:  SWAPF  03,W
+0006:  CLRF   03
+0007:  MOVWF  21
+0008:  MOVF   0A,W
+0009:  MOVWF  20
+000A:  CLRF   0A
+000B:  MOVF   04,W
+000C:  MOVWF  22
+000D:  MOVF   77,W
+000E:  MOVWF  23
+000F:  MOVF   78,W
+0010:  MOVWF  24
+0011:  MOVF   79,W
+0012:  MOVWF  25
+0013:  MOVF   7A,W
+0014:  MOVWF  26
+0015:  BCF    03.7
+0016:  BCF    03.5
+0017:  BTFSS  0B.5
+0018:  GOTO   01B
+0019:  BTFSC  0B.2
+001A:  GOTO   030
+001B:  BTFSS  0B.4
+001C:  GOTO   01F
+001D:  BTFSC  0B.1
+001E:  GOTO   033
+001F:  MOVF   22,W
+0020:  MOVWF  04
+0021:  MOVF   23,W
+0022:  MOVWF  77
+0023:  MOVF   24,W
+0024:  MOVWF  78
+0025:  MOVF   25,W
+0026:  MOVWF  79
+0027:  MOVF   26,W
+0028:  MOVWF  7A
+0029:  MOVF   20,W
+002A:  MOVWF  0A
+002B:  SWAPF  21,W
+002C:  MOVWF  03
+002D:  SWAPF  7F,F
+002E:  SWAPF  7F,W
+002F:  RETFIE
+0030:  BCF    0A.3
+0031:  BCF    0A.4
+0032:  GOTO   055
+0033:  BCF    0A.3
+0034:  BCF    0A.4
+0035:  GOTO   082
+.................... #include <16F877.h> 
+.................... //////////// Standard Header file for the PIC16F877 device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2013 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F877 
+0036:  BCF    0A.0
+0037:  BCF    0A.1
+0038:  BCF    0A.2
+0039:  ADDWF  02,F
+003A:  RETLW  74
+003B:  RETLW  5C
+003C:  RETLW  38
+003D:  RETLW  77
+003E:  RETLW  00
+003F:  RETLW  7C
+0040:  RETLW  3E
+0041:  RETLW  79
+0042:  RETLW  37
+0043:  RETLW  00
+0044:  RETLW  5E
+0045:  RETLW  30
+0046:  RETLW  77
+0047:  BCF    0A.0
+0048:  BCF    0A.1
+0049:  BCF    0A.2
+004A:  ADDWF  02,F
+004B:  RETLW  3F
+004C:  RETLW  06
+004D:  RETLW  5B
+004E:  RETLW  4F
+004F:  RETLW  66
+0050:  RETLW  6D
+0051:  RETLW  7D
+0052:  RETLW  07
+0053:  RETLW  7F
+0054:  RETLW  6F
+....................  
+.................... #list 
+....................  
+.................... #fuses NOWDT, XT 
+.................... #use delay (clock=4M) 
+*
+006D:  MOVLW  2E
+006E:  MOVWF  04
+006F:  BCF    03.7
+0070:  MOVF   00,W
+0071:  BTFSC  03.2
+0072:  GOTO   081
+0073:  MOVLW  01
+0074:  MOVWF  78
+0075:  CLRF   77
+0076:  DECFSZ 77,F
+0077:  GOTO   076
+0078:  DECFSZ 78,F
+0079:  GOTO   075
+007A:  MOVLW  4A
+007B:  MOVWF  77
+007C:  DECFSZ 77,F
+007D:  GOTO   07C
+007E:  GOTO   07F
+007F:  DECFSZ 00,F
+0080:  GOTO   073
+0081:  RETURN
+....................  
+.................... #byte TRISA=0x85 
+.................... #byte PORTA=0x05 
+.................... #byte TRISB=0x86 
+.................... #byte PORTB=0x06 
+.................... #byte TRISC=0x87 
+.................... #byte PORTC=0x07 
+.................... #byte TRISD=0x88 
+.................... #byte PORTD=0x08 
+....................  
+.................... #define button PIN_A0 
+.................... #use fast_io(A) 
+.................... #use fast_io(B) 
+.................... int veces, Seg; 
+.................... byte CONST display[] = {0x74,0x5C,0x38,0x77,0X00,0X7C,0x3E,0x79,0x37,0X00,0x5E,0x30,0x77}; 
+.................... byte CONST display2[] = {0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F}; 
+.................... #INT_RTCC //Timer0 
+.................... void Reloj() 
+.................... { 
+....................    veces--; 
+*
+0055:  DECF   28,F
+....................    Set_RTCC(220); 
+0056:  MOVLW  DC
+0057:  MOVWF  01
+....................    if(veces==0) 
+0058:  MOVF   28,F
+0059:  BTFSS  03.2
+005A:  GOTO   069
+....................    { 
+....................       veces = 10; 
+005B:  MOVLW  0A
+005C:  MOVWF  28
+....................       Seg+=2; 
+005D:  MOVLW  02
+005E:  ADDWF  29,F
+....................       if(Seg == 2) 
+005F:  MOVF   29,W
+0060:  SUBLW  02
+0061:  BTFSC  03.2
+....................          bit_set(PORTD,0); 
+0062:  BSF    08.0
+....................       if(Seg == 4) 
+0063:  MOVF   29,W
+0064:  SUBLW  04
+0065:  BTFSS  03.2
+0066:  GOTO   069
+....................       { 
+....................          bit_clear(PORTD,0); 
+0067:  BCF    08.0
+....................          Seg = 0; 
+0068:  CLRF   29
+....................       } 
+....................    } 
+.................... } 
+....................  
+0069:  BCF    0B.2
+006A:  BCF    0A.3
+006B:  BCF    0A.4
+006C:  GOTO   01F
+.................... #INT_EXT 
+.................... void Inter_Ext() 
+.................... { 
+....................    for(unsigned int cont = 0; cont < 13; cont++) 
+*
+0082:  CLRF   2C
+0083:  MOVF   2C,W
+0084:  SUBLW  0C
+0085:  BTFSS  03.0
+0086:  GOTO   094
+....................    { 
+....................       PORTC=display[cont]; 
+0087:  MOVF   2C,W
+0088:  CALL   036
+0089:  MOVWF  78
+008A:  MOVWF  07
+....................       delay_ms(500); 
+008B:  MOVLW  02
+008C:  MOVWF  2D
+008D:  MOVLW  FA
+008E:  MOVWF  2E
+008F:  CALL   06D
+0090:  DECFSZ 2D,F
+0091:  GOTO   08D
+0092:  INCF   2C,F
+0093:  GOTO   083
+....................    } 
+0094:  BCF    0B.1
+0095:  BCF    0A.3
+0096:  BCF    0A.4
+0097:  GOTO   01F
+.................... } 
+....................  
+.................... void main() 
+0098:  MOVF   03,W
+0099:  ANDLW  1F
+009A:  MOVWF  03
+009B:  BSF    03.5
+009C:  BSF    1F.0
+009D:  BSF    1F.1
+009E:  BSF    1F.2
+009F:  BCF    1F.3
+00A0:  BCF    03.7
+00A1:  BCF    03.5
+00A2:  CLRF   2A
+.................... { 
+....................    int cont2=0; 
+....................    TRISA = TRISB = 0x01; 
+00A3:  MOVLW  01
+00A4:  BSF    03.5
+00A5:  MOVWF  06
+00A6:  MOVWF  05
+....................    TRISC = TRISD = 0; 
+00A7:  CLRF   08
+00A8:  MOVF   08,W
+00A9:  MOVWF  07
+....................    PORTD = PORTC = 0; 
+00AA:  BCF    03.5
+00AB:  CLRF   07
+00AC:  MOVF   07,W
+00AD:  MOVWF  08
+....................    veces = 10; 
+00AE:  MOVLW  0A
+00AF:  MOVWF  28
+....................    Seg = 0; 
+00B0:  CLRF   29
+....................    SET_RTCC(220); 
+00B1:  MOVLW  DC
+00B2:  MOVWF  01
+....................    SETUP_TIMER_0(RTCC_INTERNAL|RTCC_DIV_256|RTCC_8_bit); 
+00B3:  BSF    03.5
+00B4:  MOVF   01,W
+00B5:  ANDLW  C0
+00B6:  IORLW  07
+00B7:  MOVWF  01
+....................    ENABLE_INTERRUPTS(INT_RTCC);          //Activa interrupcion del timer 
+00B8:  BCF    03.5
+00B9:  BSF    0B.5
+....................    ENABLE_INTERRUPTS(INT_EXT);  
+00BA:  BSF    0B.4
+....................    ENABLE_INTERRUPTS(GLOBAL);            //activa todas las interrupciones 
+00BB:  MOVLW  C0
+00BC:  IORWF  0B,F
+....................    while(true) 
+....................    { 
+....................       PORTC=display2[cont2]; 
+00BD:  MOVF   2A,W
+00BE:  CALL   047
+00BF:  MOVWF  78
+00C0:  MOVWF  07
+....................       cont2++; 
+00C1:  INCF   2A,F
+....................       if(cont2 == 10) 
+00C2:  MOVF   2A,W
+00C3:  SUBLW  0A
+00C4:  BTFSC  03.2
+....................          cont2 = 0; 
+00C5:  CLRF   2A
+00C6:  CLRF   27
+00C7:  BTFSC  0B.7
+00C8:  BSF    27.7
+00C9:  BCF    0B.7
+....................       delay_ms(200); 
+00CA:  MOVLW  C8
+00CB:  MOVWF  2E
+00CC:  CALL   06D
+00CD:  BTFSC  27.7
+00CE:  BSF    0B.7
+00CF:  GOTO   0BD
+....................    } 
+.................... } 
+00D0:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F71   XT NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

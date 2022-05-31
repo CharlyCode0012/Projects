@@ -1,0 +1,4 @@
+Boton = 52
+Motor = 11
+Fila = (9, 8, 7, 6)
+Columna = (5, 4, 3, 2)

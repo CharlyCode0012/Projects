@@ -1,0 +1,211 @@
+#include <16F877.h>
+#fuses NOWDT, XT
+#use delay (clock=4M)
+#byte TRISA=0x85
+#byte PORTA=0x05
+#byte TRISB=0x86
+#byte PORTB=0x06
+#byte TRISC=0x87
+#byte PORTC=0x07
+#byte TRISD=0x88
+#byte PORTD=0x08
+
+#define button PIN_A0
+
+#use fast_io(A)
+#use fast_io(B)
+#use fast_io(C)
+#use fast_io(D)
+
+#include <ctype.h>
+#include <stdlib.h>
+
+
+void ctrlRetra()
+{ 
+  while(!input(button)){}
+  delay_ms(500);
+}
+
+
+void Show1(unsigned int Value)
+{
+    PORTC=Value;
+    delay_ms(1000);
+}
+
+void menu(unsigned int OPC)
+{
+unsigned int Arr[3];
+
+    switch(Opc)
+  {
+    case 0:
+         ctrlRetra();
+         byte X=0x05;
+         for(unsigned int cont   =  0;   cont  <   15;   cont++)
+         {
+            rotate_right(&X,1);
+            Show1(X);
+         }
+         break;
+    case 1:
+         unsigned int Promedio = 0, X1, Y1, Z1;
+         
+         while(!input(button))
+         {
+            X1 = PORTC = PORTB;
+         }
+         
+         delay_ms(200);
+         while(!input(button))
+         {
+            Y1 = PORTC = PORTB;
+         } 
+         
+         delay_ms(200);
+          while(!input(button))
+         {
+            Z1 = PORTC = PORTB;
+         }
+         
+         delay_ms(200);
+         Promedio = (X1 + Y1 + Z1)/3;
+         Show1(Promedio);
+         break;
+    case 2:
+    unsigned int  X_1, Y_1, Z_1;
+         
+         while(!input(button))
+         {
+            X_1 = PORTC = PORTB;
+         }
+         
+         delay_ms(200);
+         while(!input(button))
+         {
+            Y_1 = PORTC = PORTB;
+         } 
+         
+         delay_ms(200);
+          while(!input(button))
+         {
+            Z_1 = PORTC = PORTB;
+         }
+    
+         
+         if(X_1  >= Y_1  && X_1  >= Z_1 )
+           Show1(X_1);
+         else
+             if(Y_1  >= Z_1)
+                Show1(Y_1);
+             else
+                Show1(Z_1);
+         break;
+    case 3:
+         byte Y=0;
+         while( Y < 0x90 )
+         {
+            PORTC=Y;
+            delay_ms(400);
+            Y+=0x02;
+         }
+         break;
+    case 4:
+    
+     unsigned int  X_2, Y_2;
+         
+         while(!input(button))
+         {
+            X_2 = PORTC = PORTB;
+         }
+         
+         delay_ms(200);
+         while(!input(button))
+         {
+            Y_2 = PORTC = PORTB;
+         } 
+         delay_ms(200);
+         
+         if(X_2 == Y_2)
+         {
+            Show1(X_2);
+            break;
+         }
+         
+         if(X_2 > Y_2)
+         {
+            while(X_2 >= Y_2)
+            {
+               Show1(X_2);
+               X_2--;
+            }
+         }
+         else
+         {
+            while(X_2 <= Y_2)
+            {
+               Show1(X_2);
+               X_2++;
+            }
+         }
+         break;
+    case 5:
+    unsigned int  X_3, Y_3;
+         
+         while(!input(button))
+         {
+            X_3 = PORTC = PORTB;
+         }
+         
+         delay_ms(200);
+         while(!input(button))
+         {
+            Y_3 = PORTC = PORTB;
+         } 
+         delay_ms(200);
+         
+         int result = 0;
+         InPut(2);
+         int Va1= X_3 & 0x00001111;
+         int Va2= Y_3 & 0x00001111;
+         result = (Va1 * Va1)-(Va2*2);
+         int8 value= read_eeprom(0X000003);
+         
+         if(bit_test(value, 1))
+              bit_set(PORTD, 0);
+         Show1(result);
+           
+         break;
+    default:
+         Show1(0xFF);
+         break;
+  }
+}
+
+
+void main()
+{
+unsigned int Opc=0;
+  TRISA = TRISB = 0xFF;
+  TRISC = TRISD = 0;
+  PORTB = PORTA = PORTD = 0;
+  while(!input(button))
+   { 
+     PORTC=0xFF;
+     delay_ms(500);
+     PORTC=0x00;
+     delay_ms(500);
+   }
+     delay_ms(1000);
+   while(!input(button))
+   { 
+     PORTC = PORTB; 
+     Opc = PORTC;
+   }
+   delay_ms(1000);
+   
+   menu(Opc);
+}
+
+

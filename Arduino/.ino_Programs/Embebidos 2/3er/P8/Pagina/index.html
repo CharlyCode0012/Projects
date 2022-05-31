@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/00d9b08a45.js" crossorigin="anonymous"></script><!-- FontAwesome 4-->
+    <link rel="stylesheet" href="CSS/Style.css">
+	<link rel="stylesheet" href="CSS/Conten.css">
+	<link rel="stylesheet" href="CSS/Range.css">
+	<title></title>
+</head>
+<body>
+	<div class="menu">
+		<nav class="menu1">
+			<button class="darkModeSwitch" id="switch">
+				<span><i class="fa fa-sun-o"></i></span>   
+				<span><i class="fa fa-moon-o"></i></span>
+		</nav>
+	</div>
+	
+		<form id = "formulario" >
+			<fieldset class="range1">
+				<legend>Velocidad</legend>
+					<div class="inputDiv">
+						<div class="etiqueta"></div>
+						<input name= "Vel" id="Velocidad" type="range" min="0" max="100" oninput="Connect()" />
+					</div>
+			</fieldset>
+			
+			<fieldset class="range1">
+				<legend>Direccion</legend>
+					<div class="inputDiv">
+						<div class="etiquetaG"></div>
+						<select name="Dir" id="Dir" onchange="Connect()">
+							<option value="Izquierda">Izquierda</option>
+							<option value="Derecha">Derecha</option>
+						</select>
+					</div>
+			</fieldset>
+			
+			<fieldset class="range1">
+				<legend>On/Off</legend>
+					<div class="inputDiv">
+						<div class="etiquetaB"></div>
+						<select name="State" id="State" onchange="Connect()">
+							<option value="Off">Off</option>
+							<option value="On">On</option>
+						</select>
+					</div>
+				  <script src="JS/Range.JS"></script>
+			</fieldset>
+			<script src="JS/Value.JS"></script>
+		</form>
+	<script src="JS/main.js"></script>
+</body>
+</html>
