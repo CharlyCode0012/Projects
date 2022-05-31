@@ -1,0 +1,4 @@
+﻿  Lista simplemente enlzada.cpp
+C:\Users\dango\source\repos\Lista simplemente enlzada\Lista simplemente enlzada\Lista simplemente enlzada.cpp(84,27): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\dango\source\repos\Lista simplemente enlzada\Lista simplemente enlzada\Lista simplemente enlzada.cpp(99): warning C4715: 'validar': no todas las rutas de acceso de control devuelven un valor
+  Lista simplemente enlzada.vcxproj -> C:\Users\dango\source\repos\Lista simplemente enlzada\Debug\Lista simplemente enlzada.exe

@@ -1,0 +1,6 @@
+﻿  Quick y Shell.cpp
+  Sort.cpp
+D:\Ceti\5to\Estructura de datos\Quick y Shell\Quick y Shell\Sort.cpp(5,29): warning C4018: '<': no coinciden signed/unsigned
+D:\Ceti\5to\Estructura de datos\Quick y Shell\Quick y Shell\Sort.cpp(26,30): warning C4018: '<=': no coinciden signed/unsigned
+  Generando código...
+  Quick y Shell.vcxproj -> D:\Ceti\5to\Estructura de datos\Quick y Shell\Debug\Quick y Shell.exe

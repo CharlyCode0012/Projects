@@ -1,0 +1,6 @@
+﻿  List_Ci.cpp
+  Lista circular.cpp
+C:\Users\ST\source\repos\5to\Lista circular\Lista circular\Lista circular.cpp(85,27): warning C4018: '<': no coinciden signed/unsigned
+  Generando código...
+C:\Users\ST\source\repos\5to\Lista circular\Lista circular\Lista circular.cpp(100): warning C4715: 'validar': no todas las rutas de acceso de control devuelven un valor
+  Lista circular.vcxproj -> C:\Users\ST\source\repos\5to\Lista circular\Debug\Lista circular.exe
