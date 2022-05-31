@@ -1,0 +1,135 @@
+
+body{
+    background-color: rgba(170, 170, 170, 0.849);
+}
+
+.Form-Login{
+    position: relative;
+    margin: 8px auto;
+    display: block;
+    width: 100%;
+    height: 500px;
+
+}
+
+.ifMenu{
+    width: 100%;
+}
+
+.Cont-Def__Texto{
+    margin-left: 8px;
+    font-size: 23px;
+    padding: 0 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Titulo-Gothic{
+    margin-left: 5px;
+    padding: 0 10px;
+    color: #737ef2;
+    font-family: 'Tangerine', serif;
+    font-size: 58px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.Text__ul{
+    margin-left: 5px;
+    padding: 0 30px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Text-Indice{
+    
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-shadow: 4px 4px 4px rgb(49, 49, 49) !important;
+    
+}
+
+.Cont-Text__Def{
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #99bda8f3;
+    width: 100%;
+    height: 100%;
+}
+
+.Cont{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../IMG/BackGround.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+.Cont-Text{
+    padding: 60px;
+    width: 100%;
+    height: 700px;
+}
+
+.Cont-Text__1{
+    padding: 30px; 
+    width: 100%;
+    height: 100%;
+}
+
+.Cont-Text__2{
+    padding: 0 30%; 
+    height: 80%;
+}
+
+.Cont-Text__Indice{
+    padding: 0 30%; 
+    height: 80%;
+} 
+
+.Cont-Text__Indice1 h1{
+    
+    font-size: 3.2rem;
+    margin-bottom: 50px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.Cont-Text__Indice1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #99bda8f3;
+    width: 100%;
+    height: 100%;
+}
+
+.Cont-Text__Indice1 ol{
+    font-size: 1.5rem;
+    
+}
+
+.Cont-Text__Indice1 ol li{
+    margin-bottom: 10px;
+}
+
+.Indice-Link{
+    color: white !important;
+}
+
+.Indice-Link a{
+    color: white;
+}
+
+.Indice-Link a:visited{
+    color: white;
+}
+.Indice-Link:hover{
+    color: white !important;
+    cursor: pointer;
+    background-color: none;
+    text-shadow: 4px 4px 4px #717dff;
+    transition: 0.5s all ease;
+}
+
+
