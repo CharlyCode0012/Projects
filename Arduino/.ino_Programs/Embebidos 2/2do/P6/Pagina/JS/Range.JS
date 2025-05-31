@@ -87,3 +87,5 @@ if (etq3) {
   }, false);
 }
 }
+
+//To-Do -> apply POO to optimize the code.
