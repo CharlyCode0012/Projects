@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<ArrayOfPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Person Fname="RO" Lname="El billullo" DoB="1990-03-14T00:00:00" />
-  <Person Fname="Danny" Lname="Lozano" DoB="2003-03-14T00:00:00">
-    <Children>
-      <Person Fname="Danielito" Lname="Lozanito UwU" DoB="2001-12-25T00:00:00" />
-    </Children>
-  </Person>
-</ArrayOfPerson>
